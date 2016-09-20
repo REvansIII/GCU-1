@@ -1,7 +1,7 @@
 package draft;
 
 //Milestone Assignment 2
-public class NFLPlayer {
+public abstract class NFLPlayer implements Celebrator {
 	String name;
 	int number;
 	String height;
@@ -108,5 +108,9 @@ public class NFLPlayer {
 	//get vertical jump
 	double getVerticalJump(){
 		return verticaljump;
+	}
+	
+	public String toString(){
+		return "NFL PLAYER";
 	}
 }
